@@ -36,5 +36,15 @@ namespace CashModule
             d = DateTime.Now;
             clock.Text = d.ToString("HH:mm:ss");
         }
+
+        private void withdraw_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deposit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
