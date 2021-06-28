@@ -20,9 +20,21 @@ namespace CashModule
     /// </summary>
     public partial class MainWindow : Window
     {
+        System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();//start time or dashboard
         public MainWindow()
         {
             InitializeComponent();
+            Timer.Tick += new EventHandler(ClockDash);
+            Timer.Interval = new TimeSpan(0, 0, 1);
+            Timer.Start();
+            date.Text = DateTime.Now.ToString("dddd, dd/MM");
+        }
+
+        private void ClockDash(object sender, EventArgs e)
+        {
+            DateTime d;
+            d = DateTime.Now;
+            clock.Text = d.ToString("HH:mm:ss");
         }
     }
 }

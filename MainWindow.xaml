@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashModule"
         mc:Ignorable="d"
-        Title="MainWindow" Background="Purple" Height="450" Width="800">
+        Title="CashModule" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <TabItem Header="Внесение средств" FontFamily="Helvetica" FontSize="16" FontWeight="Bold">
+                <Grid Background="#FFF9EA">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Снять со счета" FontFamily="Helvetica" FontSize="16" FontWeight="Bold">
+                <Grid Background="#FFF9EA">
+                    <TextBlock x:Name="clock" Height="42" Width="240" FontSize="20" FontFamily="Helvetica" Margin="15,43,539,318"/>
+                    <TextBlock x:Name="date" VerticalAlignment="Bottom" Height="35" Width="150" FontSize="12" FontFamily="Helvetica" Margin="44,0,600,568" RenderTransformOrigin="0.327,0.714" Grid.ColumnSpan="2"></TextBlock>
+                    <ComboBox HorizontalAlignment="Left" Margin="31,148,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>
