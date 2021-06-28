@@ -18,8 +18,11 @@
             <TextBlock FontFamily="Helvetica" FontSize="12">Оплата товаров/услуг</TextBlock>
         </ComboBox>
 
-        <TextBox x:Name="txtlogin" materialDesign:HintAssist.Hint="Введите сумму" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  BorderBrush="#488B95" VerticalAlignment="Top" FontSize="16" Padding="0, 1, 0, 0" Height="48" Margin="125,224,112,0"/>
+        <TextBox x:Name="depsum" materialDesign:HintAssist.Hint="Введите сумму" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  BorderBrush="#488B95" VerticalAlignment="Top" FontSize="16" Padding="0, 1, 0, 0" Height="48" Margin="125,224,112,0"/>
         <Button x:Name="depositbtn" Content="Внести" HorizontalAlignment="Left" Margin="225,358,0,0" VerticalAlignment="Top" Width="146" Height="35" Background="#488B95" BorderThickness="0" Click="Depositbtn"/>
         <Button Content="Отмена" HorizontalAlignment="Left" Margin="46,358,0,0" VerticalAlignment="Top" Width="146" Height="35" Foreground="Gray" Background="Transparent" BorderBrush="Teal" Click="Button_Click"/>
+        <materialDesign:Snackbar x:Name="completedbar" MessageQueue="{materialDesign:MessageQueue}" Background="#2BB678" Margin="0,454,0,0" Width="310" Height="47" IsActive="False" VerticalAlignment="Top"/>
+        <materialDesign:Snackbar x:Name="invalid" MessageQueue="{materialDesign:MessageQueue}" Background="#Eb3359"  Margin="0,454,0,0" Width="310" Height="47" IsActive="False" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>

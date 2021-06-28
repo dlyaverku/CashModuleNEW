@@ -29,12 +29,26 @@ namespace CashModule
 
         private void Depositbtn(object sender, RoutedEventArgs e)
         {
-            Snack
+            if(depsum.Text == string.Empty)
+            {
+                invalid.MessageQueue?.Enqueue("Введите сумму!", null, null, null, false, true, TimeSpan.FromSeconds(1));
+            }
+            else if(depsum.Text.Length > 0)
+            {
+                completedbar.MessageQueue?.Enqueue("Выполнено!", null, null, null, false, true, TimeSpan.FromSeconds(1));
+            }
+
+            
         }
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        
+           
+
     }
 }
