@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashModule"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="CashModule" Height="600" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
@@ -41,13 +42,13 @@
                             <Setter TargetName="Border" Property="Background" Value="#488B95"/>
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="#488B95" />
+                            <Setter TargetName="Border" Property="Background" Value="#478B95" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Frame x:Name="dashboard" Margin="330,27,40,22"/>
+        <Frame x:Name="dashboard" Margin="330,27,40,22" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>

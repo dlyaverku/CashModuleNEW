@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace CashModule
 {
@@ -39,12 +41,12 @@ namespace CashModule
 
         private void withdraw_Click(object sender, RoutedEventArgs e)
         {
-
+            dashboard.Navigate(new Withdraw());
         }
 
         private void deposit_Click(object sender, RoutedEventArgs e)
         {
-
+            dashboard.Navigate(new Deposit());
         }
     }
 }
