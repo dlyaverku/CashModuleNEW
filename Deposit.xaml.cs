@@ -51,11 +51,8 @@ namespace CashModule
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            depsum.Clear();
+            invalid.MessageQueue?.Enqueue("Операция отменена!", null, null, null, false, true, TimeSpan.FromSeconds(1));
         }
-
-        
-           
-
     }
 }
